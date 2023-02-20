@@ -1,0 +1,188 @@
+body {
+  height: 100vh;
+}
+
+/* navbar */
+nav {
+  background-color: rgba(255, 40, 40, 0.815);
+  padding: 2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-car-title {
+  text-decoration: none;
+  font-size: 3rem;
+  font-style: oblique;
+  color: black;
+  font: bold;
+}
+
+.nav-left-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  font-size: 2.3rem;
+}
+
+.nav-left:link,
+.nav-left:visited {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.nav-left:hover,
+.nav-left:active {
+  color: rgb(0, 183, 255);
+}
+
+/* Main Part */
+.section-user {
+  grid-template-columns: 0.5fr 1.5fr;
+  min-height: calc(100vh - 75px);
+}
+
+.user-left {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: rgb(228, 228, 228);
+}
+
+.profile {
+  border: 1px solid black;
+  padding: 1rem;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(228, 228, 228);
+}
+
+.profile-name {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  transition: all 0.3s;
+}
+
+.profile-name:hover {
+  color: green;
+}
+
+.profile-image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.profile-bellow-main {
+  border: 1px dotted yellow;
+  background-color: gray;
+  padding: 1.6rem;
+  text-align: center;
+}
+
+.profile-bellow {
+  width: fit-content;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+
+.profile-bellow:hover {
+  color: black;
+}
+
+.user-right {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-right-title {
+  font-size: 4rem;
+  padding: 2rem 0;
+}
+
+.user-right-main {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(228, 228, 228);
+  border-radius: 10px;
+  box-shadow: 0 5px 20px 5px gray;
+  padding: 2rem;
+  gap: 7rem;
+}
+
+.common {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 2rem;
+}
+
+.common input,
+.common select {
+  margin-bottom: 0.3rem;
+  margin-top: 0.2rem;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  font-size: 1.4rem;
+  border: 1px solid gray;
+  border-radius: none;
+}
+
+.common input:focus {
+  outline: 1px solid red;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+
+.btn {
+  width: 8rem !important;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  color: white;
+  background-color: black;
+  padding: 0.7rem 0 !important;
+  transition: all 0.3s;
+  border: 1px solid black !important;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.mechanic {
+  width: 100% !important;
+  background-color: white;
+}
+
+.second-div {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(228, 228, 228);
+  border-radius: 10px;
+  box-shadow: 0 5px 20px 5px gray;
+  padding: 2rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+}

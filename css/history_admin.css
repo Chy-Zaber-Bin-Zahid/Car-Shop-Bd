@@ -1,0 +1,256 @@
+html,
+body {
+  background-image: linear-gradient(
+    125deg,
+    #2c3e50,
+    #27ae60,
+    #2980b9,
+    #e74c3c,
+    #8e44ad
+  );
+  background-size: 400% 400%;
+  animation: bganimation 15s infinite;
+  height: 100%;
+}
+
+/* navbar */
+nav {
+  background-color: rgba(255, 40, 40, 0.815);
+  padding: 2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-car-title {
+  text-decoration: none;
+  font-size: 3rem;
+  font-style: oblique;
+  color: black;
+  font: bold;
+}
+
+.nav-left-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  font-size: 2.3rem;
+}
+
+.nav-left:link,
+.nav-left:visited {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.nav-left:hover,
+.nav-left:active {
+  color: rgb(0, 183, 255);
+}
+
+/* section one code */
+.sec-1 {
+  padding: 2em 03em;
+}
+
+@keyframes bganimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.whole-table {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0.5em;
+  font-size: 3rem;
+}
+
+.table {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  background-image: linear-gradient(to left, white, white);
+  width: 100%;
+}
+
+.main-td {
+  background-image: linear-gradient(gray, gray);
+  width: 100%;
+}
+
+.td-element {
+  border: 1.5px solid black;
+  width: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.td-element h5 {
+  margin: 0.5em 0em;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+.td-element-sub {
+  border: 1.5px solid black;
+  width: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.td-element-sub h5 {
+  margin: 0.5em 0em;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.bottom-part {
+  background-color: rgb(228, 228, 228);
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  width: 30%;
+  margin: 3rem auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px 5px gray;
+}
+
+.bottom-part h1 {
+  margin-bottom: 1.5rem;
+}
+
+.bottom-inside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bottom-input {
+  padding: 0.5rem;
+  border: 1px solid gray;
+}
+
+.bottom-input:focus {
+  outline: 1px solid red;
+  border: 1px solid red;
+}
+
+.bottom-btn {
+  display: inline-block;
+  border: none;
+  border: 2px solid gray;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+  background-color: black;
+  border-radius: 10px;
+  padding: .7rem;
+}
+
+.bottom-btn:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* section two code */
+.edit-part {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(228, 228, 228);
+  width: 50%;
+  margin: 2.5rem auto;
+  padding: 3rem;
+  border-radius: 10px;
+  gap: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.each {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.each label {
+  text-align: left;
+}
+
+.each input {
+  padding: 0.5rem;
+  border: 1px solid gray;
+  border-radius: none;
+}
+
+.each input:focus {
+  outline: 1px solid red;
+  border: 1px solid red;
+}
+
+.btn-part{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  display: inline-block;
+  padding: 1.7rem 4rem 1.5rem 4rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  transition: all .3s;
+  border-radius: 5px;
+  position: absolute;
+  right: -4.7rem;
+  top: -.56rem;
+  transform: rotate(45deg);
+
+}
+
+.btn-primary{
+  background-color: blue;
+}
+
+.btn-warning{
+  background-color: green;
+}
+
+.btn-danger{
+  background-color: red;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}

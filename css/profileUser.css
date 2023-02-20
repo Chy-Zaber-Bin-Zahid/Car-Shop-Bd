@@ -1,0 +1,106 @@
+/* navbar */
+nav {
+  background-color: rgba(255, 40, 40, 0.815);
+  padding: 2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-car-title {
+  text-decoration: none;
+  font-size: 3rem;
+  font-style: oblique;
+  color: black;
+  font: bold;
+}
+
+.nav-left-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  font-size: 2.3rem;
+}
+
+.nav-left:link,
+.nav-left:visited {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.nav-left:hover,
+.nav-left:active {
+  color: rgb(0, 183, 255);
+}
+
+/* section one code */
+.sec-1 {
+  text-align: center;
+  border: 1px solid rgba(135, 207, 235, 0);
+  background-image: linear-gradient(
+    125deg,
+    #2c3e50,
+    #27ae60,
+    #2980b9,
+    #e74c3c,
+    #8e44ad
+  );
+  background-size: 400% 400%;
+  animation: bganimation 15s infinite;
+  min-height: calc(100vh - 75px);
+}
+
+@keyframes bganimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.sec-1 h1{
+  font-size: 4rem;
+}
+
+.box {
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px black;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  background-image: linear-gradient(to left, gray, white);
+  padding: 1em 0em;
+}
+
+.box-left {
+  width: 50%;
+  text-align: left;
+  padding-left: 4em;
+}
+
+.box-right {
+  width: 50%;
+  text-align: left;
+  padding-left: 2em;
+}
+
+.box h5 {
+  font-size: 2rem;
+  width: 100%;
+  padding-left: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin: 0;
+  font-weight: bold;
+}
+
+.box span {
+  color: rgb(21, 7, 150);
+  font-weight: normal;
+}
